@@ -33,4 +33,16 @@ public class ProgrammingBook extends Book {
     public void setFramework(String framework) {
         this.framework = framework;
     }
+
+    @Override
+    public String toString() {
+        return "ProgrammingBook{" +
+                "bookCode=" + super.getBookCode() +
+                ", name='" + super.getName() + '\'' +
+                ", price=" + super.getPrice() +
+                ", author='" + super.getAuthor() + '\'' +
+                "language='" + language + '\'' +
+                ", framework='" + framework + '\'' +
+                '}';
+    }
 }

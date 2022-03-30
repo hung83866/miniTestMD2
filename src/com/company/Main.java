@@ -26,7 +26,7 @@ public class Main {
         for (Book b1: book) {
             TotalPrice += b1.getPrice();
         }
-        System.out.println("tổng 10 cuốn total = "+TotalPrice);
+        System.out.println("tổng 10 cuốn total = "+TotalPrice+"vnd");
 //  đếm số sách có language truyen vao:
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập language muốn tìm");
@@ -34,9 +34,10 @@ public class Main {
         int count = 0;
         for (Book listBook: book ) {
            if (listBook instanceof ProgrammingBook){
-               ProgrammingBook programmingBook = (ProgrammingBook) listBook;
-               if (programmingBook.getLanguage().equals(language)){
+               ProgrammingBook bookk = (ProgrammingBook) listBook;
+               if (bookk.getLanguage().equals(language)){
                    count++;
+                   System.out.println(bookk);
                }
            }
         }

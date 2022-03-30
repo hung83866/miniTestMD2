@@ -22,4 +22,14 @@ public class FictionBook extends Book{
     public void setCategory(String category) {
         this.category = category;
     }
+    @Override
+    public String toString() {
+        return "ProgrammingBook{" +
+                "bookCode=" + super.getBookCode() +
+                ", name='" + super.getName() + '\'' +
+                ", price=" + super.getPrice() +
+                ", author='" + super.getAuthor() + '\'' +
+                ", category='" + category + '\'' +
+                '}';
+    }
 }
